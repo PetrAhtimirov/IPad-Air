@@ -1,0 +1,152 @@
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
+
+/* General Styles */
+
+.container {
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+/* Header */
+
+header {
+	color: white;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 400;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header > .logo {
+	font-size: 32px;
+}
+
+nav > ul {
+	display: flex;
+}
+
+nav > ul > li {
+	margin-right: 13px;
+}
+
+.nav-link {
+	display: block;
+	font-weight: 300;
+	padding: 13px;
+	background-color: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(50px);
+	border-radius: 40px;
+	transition: 0.4s;
+}
+
+.nav-link:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main Banner */
+
+.main-banner > .background {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.background-video {
+	width: 100%;
+}
+
+.video-mask {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background-color: black;
+	opacity: 0.35;
+}
+
+.banner-content {
+	width: 100%;
+	height: calc(100vh - 80px);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: white;
+}
+
+.product-features {
+	background: rgba(255, 255, 255, 0.09);
+	backdrop-filter: blur(75.2696px);
+	border-radius: 40px;
+	padding: 30px;
+	width: 500px;
+	height: 340px;
+}
+
+.product-features > ul > li {
+	margin-bottom: 30px;
+}
+
+.feature-title {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 32px;
+	margin: 0;
+}
+
+.feature-description {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+.order {
+	display: block;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 26px;
+	line-height: 32px;
+	float: right;
+	margin-right: 15px;
+	margin-top: 20px;
+	background: rgba(71, 27, 212, 0.5);
+	backdrop-filter: blur(20px);
+	border-radius: 15px;
+	padding: 10px 30px;
+	transition: 0.4s;
+}
+
+.order:hover {
+	background: rgba(71, 27, 212, 1);
+}
