@@ -6,7 +6,9 @@
 /* General Styles */
 
 .container {
-	width: 1000px;
+	max-width: 1100px;
+	padding-left: 50px;
+	padding-right: 50px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -26,6 +28,17 @@ ul {
 a {
 	text-decoration: none;
 	color: currentColor;
+}
+
+.block-title {
+	text-align: center;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 32px;
+	line-height: 39px;
+	text-transform: uppercase;
+	margin: 0;
 }
 
 /* Header */
@@ -53,6 +66,10 @@ nav > ul > li {
 	margin-right: 13px;
 }
 
+nav > ul > li:last-child {
+	margin-right: 0;
+}
+
 .nav-link {
 	display: block;
 	font-weight: 300;
@@ -71,20 +88,21 @@ nav > ul > li {
 
 .main-banner > .background {
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 	overflow: hidden;
 	position: absolute;
 	z-index: -1;
 }
 
 .background-video {
-	width: 100%;
+	min-width: 100%;
+	min-height: 100%;
 }
 
 .video-mask {
 	position: absolute;
-	height: 100vh;
-	width: 100vw;
+	height: 100%;
+	width: 100%;
 	background-color: black;
 	opacity: 0.35;
 }
@@ -149,4 +167,46 @@ nav > ul > li {
 
 .order:hover {
 	background: rgba(71, 27, 212, 1);
+}
+
+/* Compound */
+
+.compound {
+	background-color: black;
+	color: white;
+	padding: 50px 0;
+}
+
+.compound > .container {
+	max-width: 1400px;
+}
+
+.compound-content {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.info-block > li {
+	width: 300px;
+	height: 150px;
+	background: rgba(255, 255, 255, 0.09);
+	backdrop-filter: blur(75.2696px);
+	margin-bottom: 65px;
+	border-radius: 40px;
+	padding: 30px;
+}
+
+.info-block > li:last-child {
+	margin-bottom: 0;
+}
+
+.info-block > li > h3 {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	margin: 0;
 }
