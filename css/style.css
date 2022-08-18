@@ -127,7 +127,8 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    transform: scale(0.85); }
     .main-banner .images-list li {
       width: 80px;
       animation-name: banner-images;
@@ -148,7 +149,7 @@ header {
   100% {
     opacity: 1;
     width: 220px;
-    margin: 0 50px; } }
+    margin: 0 60px; } }
 @keyframes opacity {
   0% {
     opacity: 0;
