@@ -54,7 +54,7 @@ header {
 	justify-content: space-between;
 
 	.logo {
-		font-size: 32px;
+		font-size: 30px;
 		animation-name: opacity;
 		animation-fill-mode: both;
 		animation-delay: 3.6s;
@@ -89,7 +89,7 @@ header {
 		.nav-link {
 			display: block;
 			font-weight: 300;
-			font-size: 18px;
+			font-size: 16px;
 			padding: 12px 14px;
 			background-color: rgba(255, 255, 255, 0.1);
 			backdrop-filter: blur(50px);
@@ -126,7 +126,7 @@ header {
 		height: 100%;
 		width: 100%;
 		background-color: black;
-		opacity: 0.35;
+		opacity: 0.42;
 	}
 
 	.banner-content {
@@ -149,6 +149,7 @@ header {
 			animation-delay: 2.6s;
 			animation-duration: 1.2s;
 			margin-bottom: 0;
+			font-size: 60px;
 		}
 
 		p {
@@ -160,6 +161,7 @@ header {
 			animation-fill-mode: both;
 			animation-delay: 2.9s;
 			animation-duration: 1.2s;
+			font-size: 18px;
 		}
 	}
 
@@ -168,6 +170,7 @@ header {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		transform: scale(0.85);
 
 		li {
 			width: 80px;
@@ -198,7 +201,7 @@ header {
 	100% {
 		opacity: 1;
 		width: 220px;
-		margin: 0 50px;
+		margin: 0 60px;
 	}
 }
 
