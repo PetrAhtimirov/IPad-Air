@@ -44,7 +44,7 @@ header {
   align-items: center;
   justify-content: space-between; }
   header .logo {
-    font-size: 32px;
+    font-size: 30px;
     animation-name: opacity;
     animation-fill-mode: both;
     animation-delay: 3.6s;
@@ -66,7 +66,7 @@ header {
   header nav .nav-link {
     display: block;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
     padding: 12px 14px;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(50px);
@@ -92,7 +92,7 @@ header {
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: 0.35; }
+    opacity: 0.42; }
   .main-banner .banner-content {
     width: 100%;
     height: calc(100vh - 80px);
@@ -111,7 +111,8 @@ header {
       animation-fill-mode: both;
       animation-delay: 2.6s;
       animation-duration: 1.2s;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      font-size: 60px; }
     .main-banner .banner-content p {
       font-family: "Inter";
       font-style: normal;
@@ -120,7 +121,8 @@ header {
       animation-name: opacity;
       animation-fill-mode: both;
       animation-delay: 2.9s;
-      animation-duration: 1.2s; }
+      animation-duration: 1.2s;
+      font-size: 18px; }
   .main-banner .images-list {
     width: 100%;
     display: flex;
