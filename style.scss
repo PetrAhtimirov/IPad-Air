@@ -1,0 +1,257 @@
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
+
+/* General Styles */
+
+.container {
+	max-width: 1200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+.block-title {
+	text-align: center;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 32px;
+	line-height: 39px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+/* Header */
+
+header {
+	color: white;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 400;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.logo {
+		font-size: 32px;
+		animation-name: opacity;
+		animation-fill-mode: both;
+		animation-delay: 3.6s;
+		animation-duration: 0.7s;
+	}
+
+	nav {
+		ul {
+			display: flex;
+
+			li {
+				margin-right: 13px;
+				animation-name: opacity;
+				animation-fill-mode: both;
+				animation-duration: 1s;
+			}
+
+			li:nth-child(1) {
+				animation-delay: 3.8s;
+			}
+
+			li:nth-child(2) {
+				animation-delay: 4s;
+			}
+
+			li:last-child {
+				margin-right: 0;
+				animation-delay: 4.2s;
+			}
+		}
+
+		.nav-link {
+			display: block;
+			font-weight: 300;
+			font-size: 18px;
+			padding: 12px 14px;
+			background-color: rgba(255, 255, 255, 0.1);
+			backdrop-filter: blur(50px);
+			border-radius: 40px;
+			transition: 0.4s;
+		}
+
+		.nav-link:hover {
+			background-color: rgba(255, 255, 255, 0.2);
+		}
+	}
+}
+
+/* Main Banner */
+
+.main-banner {
+	overflow: hidden;
+
+	.background {
+		height: 100vh;
+		width: 100%;
+		overflow: hidden;
+		position: absolute;
+		z-index: -1;
+	}
+
+	.background-video {
+		min-width: 100%;
+		min-height: 100%;
+	}
+
+	.video-mask {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: black;
+		opacity: 0.35;
+	}
+
+	.banner-content {
+		width: 100%;
+		height: calc(100vh - 80px);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		font-size: 34px;
+		text-align: center;
+
+		h1 {
+			font-family: "Montserrat";
+			font-style: normal;
+			font-weight: 300;
+			animation-name: opacity;
+			animation-fill-mode: both;
+			animation-delay: 2.6s;
+			animation-duration: 1.2s;
+			margin-bottom: 0;
+		}
+
+		p {
+			font-family: "Inter";
+			font-style: normal;
+			font-weight: 300;
+			font-size: 22px;
+			animation-name: opacity;
+			animation-fill-mode: both;
+			animation-delay: 2.9s;
+			animation-duration: 1.2s;
+		}
+	}
+
+	.images-list {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		li {
+			width: 80px;
+			animation-name: banner-images;
+			animation-delay: 0.2s;
+			animation-duration: 2.5s;
+			animation-fill-mode: both;
+			animation-timing-function: cubic-bezier(0, 0.43, 0, 1);
+		}
+
+		li:nth-child(odd) {
+			margin-top: 400px;
+		}
+
+		li:nth-child(even) {
+			margin-bottom: 200px;
+		}
+	}
+}
+
+@keyframes banner-images {
+	50% {
+		margin: 0;
+		width: 80px;
+		padding: inherit;
+	}
+
+	100% {
+		opacity: 1;
+		width: 220px;
+		margin: 0 50px;
+	}
+}
+
+@keyframes opacity {
+	0% {
+		opacity: 0;
+		transform: translateY(5px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+/* Compound */
+
+.compound {
+	background-color: black;
+	color: white;
+	padding: 50px 0;
+}
+
+.compound > .container {
+	max-width: 1400px;
+}
+
+.compound-content {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.info-block > li {
+	width: 300px;
+	height: 150px;
+	background: rgba(255, 255, 255, 0.09);
+	backdrop-filter: blur(75.2696px);
+	margin-bottom: 65px;
+	border-radius: 40px;
+	padding: 30px;
+}
+
+.info-block > li:last-chil d {
+	margin-bottom: 0;
+}
+
+.info-block > li > h3 {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	margin: 0;
+}
