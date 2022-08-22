@@ -252,11 +252,13 @@ header {
 	}
 }
 
-@media (max-width: 850px) {
-	@keyframes banner-images {
-		100% {
-			margin: 0 10px;
-		}
+@media (max-width: 880px) {
+	.images-list {
+		margin-right: 40px;
+	}
+
+	.image-item {
+		animation-name: banner-images-m !important;
 	}
 }
 
@@ -271,6 +273,20 @@ header {
 		opacity: 1;
 		width: 220px;
 		margin: 0 50px;
+	}
+}
+
+@keyframes banner-images-m {
+	50% {
+		margin: 0;
+		width: 80px;
+		padding: inherit;
+	}
+
+	100% {
+		opacity: 1;
+		width: 100px;
+		margin: 0;
 	}
 }
 
