@@ -125,8 +125,10 @@ header {
     align-items: center;
     color: white;
     font-size: 34px;
-    text-align: center; }
-    .main-banner .banner-content h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px; }
+    .main-banner .banner-content .banner-title {
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 300;
@@ -179,6 +181,11 @@ header {
 
   .image-item {
     animation-name: banner-images-m !important; } }
+@media (max-width: 600px) {
+  .banner-content .banner-title {
+    font-size: 40px !important; }
+  .banner-content p {
+    font-size: 16px !important; } }
 @keyframes banner-images {
   50% {
     margin: 0;
