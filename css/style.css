@@ -320,7 +320,6 @@ header {
       font-style: normal;
       font-weight: 400; }
     .accessories .accessories-item .image-box {
-      min-width: 350px;
       max-width: 80%;
       min-height: 120px;
       position: relative;
@@ -341,10 +340,32 @@ header {
           margin-bottom: 5px; }
         .accessories .accessories-item .description ul li:last-child {
           margin-bottom: 0; }
+    .accessories .accessories-item form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .accessories .accessories-item form input {
+        display: none; }
+      .accessories .accessories-item form label {
+        font-size: 0;
+        padding: 13px;
+        border-radius: 16px;
+        margin-right: 8px;
+        box-sizing: unset;
+        position: relative;
+        outline: 3px solid rgba(255, 255, 255, 0.3);
+        transition: 0.3s;
+        cursor: pointer; }
+      .accessories .accessories-item form input:checked + label {
+        padding: 16px;
+        border-radius: 18px; }
+      .accessories .accessories-item form .black {
+        background: linear-gradient(0deg, black 0%, #353541 100%); }
+      .accessories .accessories-item form .white {
+        background: linear-gradient(0deg, white 0%, #bbbbc9 100%); }
     .accessories .accessories-item .count {
       display: flex;
-      align-items: center;
-      justify-content: flex-end; }
+      align-items: center; }
       .accessories .accessories-item .count h3 {
         margin: 0;
         font-family: "Montserrat";
@@ -352,7 +373,7 @@ header {
         font-weight: 300;
         font-size: 22px; }
       .accessories .accessories-item .count button {
-        margin-left: 20px;
+        margin-left: 15px;
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
