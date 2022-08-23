@@ -80,6 +80,8 @@ header {
 				animation-name: opacity;
 				animation-fill-mode: both;
 				animation-duration: 1s;
+				backdrop-filter: blur(16px);
+				border-radius: 40px;
 			}
 
 			li:nth-child(1) {
@@ -102,7 +104,6 @@ header {
 			font-size: 16px;
 			padding: 12px 14px;
 			background-color: rgba(255, 255, 255, 0.1);
-			backdrop-filter: blur(50px);
 			border-radius: 40px;
 			transition: 0.4s;
 		}
