@@ -222,7 +222,7 @@ header {
   background-color: black; }
   .tech-specs .container {
     padding-top: 100px;
-    padding-bottom: 100px; }
+    padding-bottom: 115px; }
   .tech-specs .specs-content {
     display: flex;
     position: relative;
@@ -242,21 +242,22 @@ header {
     margin-left: 70px; }
     .tech-specs .specs .main-item {
       margin-bottom: 20px;
-      display: flex; }
+      display: flex;
+      transition: 0.4s; }
       .tech-specs .specs .main-item span {
         text-transform: uppercase;
         margin-right: 20px; }
       .tech-specs .specs .main-item ul li {
-        margin-bottom: 8px;
-        transition: 0.4s; }
+        margin-bottom: 8px; }
         .tech-specs .specs .main-item ul li b {
           font-weight: 500; }
       .tech-specs .specs .main-item ul li:last-child {
         margin-bottom: 0; }
-      .tech-specs .specs .main-item ul li:hover {
-        transform: scale(1.03); }
     .tech-specs .specs .main-item:last-child {
       margin-bottom: 0; }
+    .tech-specs .specs .main-item:hover {
+      transform: scale(1.04);
+      padding-left: 10px; }
 
 @media (max-width: 1100px) {
   .specs-content {
@@ -305,21 +306,55 @@ header {
   padding: 25px 30px;
   margin: 10px;
   color: white;
-  flex: 1 0 25%; }
+  flex: 1 0 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
   .accessories .accessories-item h2 {
     margin: 0;
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 400;
-    margin-bottom: 30px; }
+    font-weight: 400; }
   .accessories .accessories-item .image-box {
     max-width: 350px;
     min-height: 120px;
     position: relative;
-    margin-bottom: 20px; }
+    margin: 30px auto; }
     .accessories .accessories-item .image-box img {
-      width: 100%;
-      transform: rotate(15deg);
-      margin-top: 50px; }
+      width: 100%; }
+  .accessories .accessories-item .description {
+    opacity: 0.8;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    display: flex;
+    margin-bottom: 20px; }
+    .accessories .accessories-item .description ul {
+      margin-left: 10px; }
+      .accessories .accessories-item .description ul li {
+        margin-bottom: 5px; }
+      .accessories .accessories-item .description ul li:last-child {
+        margin-bottom: 0; }
+  .accessories .accessories-item .count {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    .accessories .accessories-item .count h3 {
+      margin: 0;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 22px; }
+    .accessories .accessories-item .count button {
+      margin-left: 20px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      background-color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 8px 16px;
+      cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
