@@ -18,8 +18,8 @@
 					muted
 					loop
 					class="background-video"
-					width="initial-scale"
-					height="initial-scale"
+					width="initial"
+					height="initial"
 					type="video/webm"
 				>
 					<source src="video\Main-banner.webm" type="video/webm" />
@@ -32,7 +32,7 @@
 					<nav>
 						<ul>
 							<li><a href="#tech-specs" class="nav-link">Tech Specs</a></li>
-							<li><a href="" class="nav-link">Accessories</a></li>
+							<li><a href="#accessories" class="nav-link">Accessories</a></li>
 							<li><a href="" class="nav-link">Buy</a></li>
 						</ul>
 					</nav>
@@ -127,28 +127,31 @@
 			</div>
 		</section>
 
-		<section class="compound" style="display: none">
+		<section class="accessories" id="accessories">
+			<div class="background">
+				<div class="video-mask"></div>
+				<video
+					playsinline
+					autoplay
+					muted
+					loop
+					class="background-video"
+					width="initial"
+					height="initial"
+					type="video/webm"
+				>
+					<source src="video\Accessories.webm" type="video/webm" />
+				</video>
+			</div>
 			<div class="container">
-				<h1 class="block-title">Ингредиенты</h1>
-				<div class="compound-content">
-					<ul class="info-block">
-						<li><h3>Ингридиент</h3></li>
-						<li><h3>Ингридиент</h3></li>
-						<li><h3>Ингридиент</h3></li>
-					</ul>
-					<div class="product-image">
-						<img
-							src="image\prod.png"
-							alt="Таблетки"
-							width="220px"
-							height="342px"
-						/>
+				<h1 class="block-title">Accessories</h1>
+				<div class="accessories-content" style="display: none">
+					<div class="accessories-item">
+						<h2>Apple Pencil's</h2>
+						<div class="image-box">
+							<img src="image\apple-pencil.png" alt="apple-pencil" />
+						</div>
 					</div>
-					<ul class="info-block">
-						<li><h3>Ингридиент</h3></li>
-						<li><h3>Ингридиент</h3></li>
-						<li><h3>Ингридиент</h3></li>
-					</ul>
 				</div>
 			</div>
 		</section>
