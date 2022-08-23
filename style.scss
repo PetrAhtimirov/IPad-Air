@@ -480,7 +480,6 @@ header {
 		}
 
 		.image-box {
-			min-width: 350px;
 			max-width: 80%;
 			min-height: 120px;
 			position: relative;
@@ -513,10 +512,43 @@ header {
 			}
 		}
 
+		form {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			input {
+				display: none;
+			}
+
+			label {
+				font-size: 0;
+				padding: 13px;
+				border-radius: 16px;
+				margin-right: 8px;
+				box-sizing: unset;
+				position: relative;
+				outline: 3px solid rgba(255, 255, 255, 0.3);
+				transition: 0.3s;
+				cursor: pointer;
+			}
+
+			input:checked + label {
+				padding: 16px;
+				border-radius: 18px;
+			}
+
+			.black {
+				background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(53, 53, 65, 1) 100%);
+			}
+			.white {
+				background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(187, 187, 201, 1) 100%);
+			}
+		}
+
 		.count {
 			display: flex;
 			align-items: center;
-			justify-content: flex-end;
 
 			h3 {
 				margin: 0;
@@ -527,7 +559,7 @@ header {
 			}
 
 			button {
-				margin-left: 20px;
+				margin-left: 15px;
 				font-family: "Montserrat";
 				font-style: normal;
 				font-weight: 400;
