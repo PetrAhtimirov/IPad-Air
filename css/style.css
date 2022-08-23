@@ -276,85 +276,92 @@ header {
   .specs {
     font-size: 15px !important; } }
 /* Accessories */
-.accessories .background {
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-  background-color: black; }
-.accessories .background-video {
-  min-width: 100%;
-  min-height: 100%; }
-.accessories .video-mask {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.42; }
-.accessories .block-title {
-  padding-top: 100px; }
-.accessories .accessories-content {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
-.accessories .accessories-item {
-  min-width: 360px;
-  background: rgba(255, 255, 255, 0.09);
-  backdrop-filter: blur(75.2696px);
-  border-radius: 40px;
-  padding: 25px 30px;
-  margin: 10px;
-  color: white;
-  flex: 1 0 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-  .accessories .accessories-item h2 {
-    margin: 0;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400; }
-  .accessories .accessories-item .image-box {
-    max-width: 350px;
-    min-height: 120px;
-    position: relative;
-    margin: 30px auto; }
-    .accessories .accessories-item .image-box img {
-      width: 100%; }
-  .accessories .accessories-item .description {
-    opacity: 0.8;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 13px;
+.accessories {
+  position: relative; }
+  .accessories .container {
+    padding-bottom: 100px; }
+  .accessories .background {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    background-color: black; }
+  .accessories .background-video {
+    min-width: 100%;
+    min-height: 100%; }
+  .accessories .video-mask {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.42; }
+  .accessories .block-title {
+    padding-top: 100px; }
+  .accessories .accessories-content {
     display: flex;
-    margin-bottom: 20px; }
-    .accessories .accessories-item .description ul {
-      margin-left: 10px; }
-      .accessories .accessories-item .description ul li {
-        margin-bottom: 5px; }
-      .accessories .accessories-item .description ul li:last-child {
-        margin-bottom: 0; }
-  .accessories .accessories-item .count {
+    justify-content: center;
+    flex-wrap: wrap; }
+  .accessories .accessories-item {
+    min-width: 360px;
+    background: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(75.2696px);
+    border-radius: 40px;
+    padding: 25px 30px;
+    margin: 10px;
+    color: white;
+    flex: 1 0 25%;
     display: flex;
-    align-items: center;
-    justify-content: flex-end; }
-    .accessories .accessories-item .count h3 {
+    flex-direction: column;
+    justify-content: space-between; }
+    .accessories .accessories-item h2 {
       margin: 0;
       font-family: "Montserrat";
       font-style: normal;
-      font-weight: 300;
-      font-size: 22px; }
-    .accessories .accessories-item .count button {
-      margin-left: 20px;
+      font-weight: 400; }
+    .accessories .accessories-item .image-box {
+      min-width: 350px;
+      max-width: 80%;
+      min-height: 120px;
+      position: relative;
+      margin: 30px auto; }
+      .accessories .accessories-item .image-box img {
+        width: 100%; }
+    .accessories .accessories-item .description {
+      opacity: 0.8;
       font-family: "Montserrat";
       font-style: normal;
-      font-weight: 400;
-      background-color: white;
-      border: none;
-      border-radius: 20px;
-      padding: 8px 16px;
-      cursor: pointer; }
+      font-weight: 300;
+      font-size: 13px;
+      display: flex;
+      margin-bottom: 20px; }
+      .accessories .accessories-item .description ul {
+        margin-left: 10px; }
+        .accessories .accessories-item .description ul li {
+          margin-bottom: 5px; }
+        .accessories .accessories-item .description ul li:last-child {
+          margin-bottom: 0; }
+    .accessories .accessories-item .count {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+      .accessories .accessories-item .count h3 {
+        margin: 0;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px; }
+      .accessories .accessories-item .count button {
+        margin-left: 20px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        background-color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 8px 16px;
+        cursor: pointer; }
+  .accessories .accessories-item:last-child .image-box {
+    max-width: 600px; }
 
 /*# sourceMappingURL=style.css.map */

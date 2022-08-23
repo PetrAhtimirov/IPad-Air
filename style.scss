@@ -421,8 +421,14 @@ header {
 /* Accessories */
 
 .accessories {
+	position: relative;
+
+	.container {
+		padding-bottom: 100px;
+	}
+
 	.background {
-		height: 100vh;
+		height: 100%;
 		width: 100%;
 		overflow: hidden;
 		position: absolute;
@@ -474,7 +480,8 @@ header {
 		}
 
 		.image-box {
-			max-width: 350px;
+			min-width: 350px;
+			max-width: 80%;
 			min-height: 120px;
 			position: relative;
 			margin: 30px auto;
@@ -530,6 +537,12 @@ header {
 				padding: 8px 16px;
 				cursor: pointer;
 			}
+		}
+	}
+
+	.accessories-item:last-child {
+		.image-box {
+			max-width: 600px;
 		}
 	}
 }
