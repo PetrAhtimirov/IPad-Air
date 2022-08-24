@@ -344,13 +344,18 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center; }
+      .accessories .accessories-item form .colors {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        min-height: 50px; }
       .accessories .accessories-item form input {
         display: none; }
       .accessories .accessories-item form label {
         font-size: 0;
         padding: 13px;
         border-radius: 16px;
-        margin-right: 8px;
+        margin: 5px;
         box-sizing: unset;
         position: relative;
         outline: 3px solid rgba(255, 255, 255, 0.3);
@@ -363,9 +368,18 @@ header {
         background: linear-gradient(0deg, black 0%, #353541 100%); }
       .accessories .accessories-item form .white {
         background: linear-gradient(0deg, white 0%, #bbbbc9 100%); }
+      .accessories .accessories-item form .marine-blue {
+        background: linear-gradient(0deg, #4a6775 0%, #28414e 100%); }
+      .accessories .accessories-item form .dark-cherry {
+        background: linear-gradient(0deg, #53444b 0%, #6c495a 100%); }
+      .accessories .accessories-item form .electric-orange {
+        background: linear-gradient(0deg, #fc624a 0%, #b93925 100%); }
+      .accessories .accessories-item form .english-lavanda {
+        background: linear-gradient(0deg, #8f8cab 0%, #6b6793 100%); }
     .accessories .accessories-item .count {
       display: flex;
-      align-items: center; }
+      align-items: center;
+      min-width: 210px; }
       .accessories .accessories-item .count h3 {
         margin: 0;
         font-family: "Montserrat";
@@ -382,6 +396,11 @@ header {
         border-radius: 20px;
         padding: 8px 16px;
         cursor: pointer; }
+  @media (max-width: 608px) {
+    .accessories form {
+      flex-direction: column; }
+    .accessories .count {
+      margin-top: 15px; } }
   .accessories .accessories-item:last-child .image-box {
     max-width: 600px; }
 

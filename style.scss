@@ -517,6 +517,13 @@ header {
 			justify-content: space-between;
 			align-items: center;
 
+			.colors {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				min-height: 50px;
+			}
+
 			input {
 				display: none;
 			}
@@ -525,7 +532,7 @@ header {
 				font-size: 0;
 				padding: 13px;
 				border-radius: 16px;
-				margin-right: 8px;
+				margin: 5px;
 				box-sizing: unset;
 				position: relative;
 				outline: 3px solid rgba(255, 255, 255, 0.3);
@@ -544,11 +551,24 @@ header {
 			.white {
 				background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(187, 187, 201, 1) 100%);
 			}
+			.marine-blue {
+				background: linear-gradient(0deg, rgba(74, 103, 117, 1) 0%, rgba(40, 65, 78, 1) 100%);
+			}
+			.dark-cherry {
+				background: linear-gradient(0deg, rgba(83, 68, 75, 1) 0%, rgba(108, 73, 90, 1) 100%);
+			}
+			.electric-orange {
+				background: linear-gradient(0deg, rgba(252, 98, 74, 1) 0%, rgba(185, 57, 37, 1) 100%);
+			}
+			.english-lavanda {
+				background: linear-gradient(0deg, rgba(143, 140, 171, 1) 0%, rgba(107, 103, 147, 1) 100%);
+			}
 		}
 
 		.count {
 			display: flex;
 			align-items: center;
+			min-width: 210px;
 
 			h3 {
 				margin: 0;
@@ -569,6 +589,16 @@ header {
 				padding: 8px 16px;
 				cursor: pointer;
 			}
+		}
+	}
+
+	@media (max-width: 608px) {
+		form {
+			flex-direction: column;
+		}
+
+		.count {
+			margin-top: 15px;
 		}
 	}
 
