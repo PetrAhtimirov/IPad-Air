@@ -536,6 +536,7 @@ header {
 				box-sizing: unset;
 				position: relative;
 				outline: 3px solid rgba(255, 255, 255, 0.3);
+				transform: translateZ(0);
 				transition: 0.3s;
 				cursor: pointer;
 			}
@@ -606,6 +607,44 @@ header {
 	.accessories-item:last-child {
 		.image-box {
 			max-width: 600px;
+		}
+	}
+}
+
+/* Buy IPad Air */
+
+.ipad-buy {
+	.container {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	.buy-content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		color: white;
+
+		h2 {
+			font-family: "Montserrat";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 26px;
+		}
+
+		.cart-content {
+			display: flex;
+			flex-direction: column;
+
+			.cart-item {
+				display: flex;
+				flex-direction: column;
+
+				h2 {
+					font-weight: 300;
+					font-size: 24px;
+				}
+			}
 		}
 	}
 }
