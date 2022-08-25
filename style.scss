@@ -545,25 +545,6 @@ header {
 				padding: 16px;
 				border-radius: 18px;
 			}
-
-			.black {
-				background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(53, 53, 65, 1) 100%);
-			}
-			.white {
-				background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(187, 187, 201, 1) 100%);
-			}
-			.marine-blue {
-				background: linear-gradient(0deg, rgba(74, 103, 117, 1) 0%, rgba(40, 65, 78, 1) 100%);
-			}
-			.dark-cherry {
-				background: linear-gradient(0deg, rgba(83, 68, 75, 1) 0%, rgba(108, 73, 90, 1) 100%);
-			}
-			.electric-orange {
-				background: linear-gradient(0deg, rgba(252, 98, 74, 1) 0%, rgba(185, 57, 37, 1) 100%);
-			}
-			.english-lavanda {
-				background: linear-gradient(0deg, rgba(143, 140, 171, 1) 0%, rgba(107, 103, 147, 1) 100%);
-			}
 		}
 
 		.count {
@@ -611,6 +592,25 @@ header {
 	}
 }
 
+.black {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(53, 53, 65, 1) 100%);
+}
+.white {
+	background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(187, 187, 201, 1) 100%);
+}
+.marine-blue {
+	background: linear-gradient(0deg, rgba(74, 103, 117, 1) 0%, rgba(40, 65, 78, 1) 100%);
+}
+.dark-cherry {
+	background: linear-gradient(0deg, rgba(83, 68, 75, 1) 0%, rgba(108, 73, 90, 1) 100%);
+}
+.electric-orange {
+	background: linear-gradient(0deg, rgba(252, 98, 74, 1) 0%, rgba(185, 57, 37, 1) 100%);
+}
+.english-lavanda {
+	background: linear-gradient(0deg, rgba(143, 140, 171, 1) 0%, rgba(107, 103, 147, 1) 100%);
+}
+
 /* Buy IPad Air */
 
 .ipad-buy {
@@ -625,11 +625,45 @@ header {
 		justify-content: space-between;
 		color: white;
 
-		h2 {
-			font-family: "Montserrat";
-			font-style: normal;
-			font-weight: 400;
-			font-size: 26px;
+		.cart {
+			width: 340px;
+			margin-left: 50px;
+		}
+
+		.buy-title {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			h2 {
+				font-family: "Montserrat";
+				font-style: normal;
+				font-weight: 400;
+				font-size: 26px;
+			}
+
+			h3:last-child {
+				font-family: "Montserrat";
+				font-style: normal;
+				font-weight: 400;
+				font-size: 22px;
+				margin-left: 50px;
+			}
+		}
+
+		.ipad-buy-content {
+			display: flex;
+			flex-direction: column;
+
+			.color {
+				h2 {
+					font-family: "Montserrat";
+					font-style: normal;
+					font-weight: 300;
+					font-size: 18px;
+					opacity: 0.7;
+				}
+			}
 		}
 
 		.cart-content {
@@ -639,10 +673,86 @@ header {
 			.cart-item {
 				display: flex;
 				flex-direction: column;
+				background: rgba(255, 255, 255, 0.09);
+				backdrop-filter: blur(75.2696px);
+				border-radius: 20px;
+				padding: 15px;
+				border: 3px solid rgba(255, 255, 255, 0.2);
+				position: relative;
+				margin-bottom: 15px;
 
 				h2 {
+					font-family: "Montserrat";
+					font-style: normal;
 					font-weight: 300;
-					font-size: 24px;
+					font-size: 20px;
+					margin: 0;
+				}
+
+				.item-color {
+					display: flex;
+					align-items: center;
+					margin-top: 10px;
+
+					p {
+						font-size: 16px;
+						margin-top: 3px;
+					}
+
+					div {
+						margin-left: 10px;
+						height: 18px;
+						width: 18px;
+						border-radius: 9px;
+						outline: 2px solid rgba(255, 255, 255, 0.3);
+					}
+				}
+
+				p {
+					font-family: "Montserrat";
+					font-style: normal;
+					font-weight: 300;
+					font-size: 14px;
+					opacity: 0.6;
+					margin-top: 25px;
+					margin-left: 2px;
+					margin-bottom: 0;
+				}
+
+				.close-button {
+					border: none;
+					background-color: transparent;
+					display: block;
+					position: absolute;
+					top: 13px;
+					right: 15px;
+					width: 22px;
+					height: 24px;
+					cursor: pointer;
+					padding: 0;
+				}
+
+				.close-button:after {
+					position: absolute;
+					top: 0;
+					right: 10px;
+					content: "";
+					display: block;
+					background-color: white;
+					width: 1px;
+					height: 25px;
+					transform: rotate(45deg);
+				}
+				.close-button:before {
+					position: absolute;
+					top: 0;
+					right: 10px;
+					content: "";
+					display: block;
+					background-color: white;
+					width: 1px;
+					height: 25px;
+					transform: rotate(-45deg);
 				}
 			}
 		}
