@@ -359,6 +359,7 @@ header {
         box-sizing: unset;
         position: relative;
         outline: 3px solid rgba(255, 255, 255, 0.3);
+        transform: translateZ(0);
         transition: 0.3s;
         cursor: pointer; }
       .accessories .accessories-item form input:checked + label {
@@ -404,6 +405,30 @@ header {
       margin-top: 15px; } }
   .accessories .accessories-item:last-child .image-box {
     max-width: 600px; }
+
+/* Buy IPad Air */
+.ipad-buy .container {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+.ipad-buy .buy-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: white; }
+  .ipad-buy .buy-content h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px; }
+  .ipad-buy .buy-content .cart-content {
+    display: flex;
+    flex-direction: column; }
+    .ipad-buy .buy-content .cart-content .cart-item {
+      display: flex;
+      flex-direction: column; }
+      .ipad-buy .buy-content .cart-content .cart-item h2 {
+        font-weight: 300;
+        font-size: 24px; }
 
 /* Preloader */
 .preloader {
