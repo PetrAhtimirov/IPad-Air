@@ -365,18 +365,6 @@ header {
       .accessories .accessories-item form input:checked + label {
         padding: 16px;
         border-radius: 18px; }
-      .accessories .accessories-item form .black {
-        background: linear-gradient(0deg, black 0%, #353541 100%); }
-      .accessories .accessories-item form .white {
-        background: linear-gradient(0deg, white 0%, #bbbbc9 100%); }
-      .accessories .accessories-item form .marine-blue {
-        background: linear-gradient(0deg, #4a6775 0%, #28414e 100%); }
-      .accessories .accessories-item form .dark-cherry {
-        background: linear-gradient(0deg, #53444b 0%, #6c495a 100%); }
-      .accessories .accessories-item form .electric-orange {
-        background: linear-gradient(0deg, #fc624a 0%, #b93925 100%); }
-      .accessories .accessories-item form .english-lavanda {
-        background: linear-gradient(0deg, #8f8cab 0%, #6b6793 100%); }
     .accessories .accessories-item .count {
       display: flex;
       align-items: center;
@@ -406,6 +394,24 @@ header {
   .accessories .accessories-item:last-child .image-box {
     max-width: 600px; }
 
+.black {
+  background: linear-gradient(0deg, black 0%, #353541 100%); }
+
+.white {
+  background: linear-gradient(0deg, white 0%, #bbbbc9 100%); }
+
+.marine-blue {
+  background: linear-gradient(0deg, #4a6775 0%, #28414e 100%); }
+
+.dark-cherry {
+  background: linear-gradient(0deg, #53444b 0%, #6c495a 100%); }
+
+.electric-orange {
+  background: linear-gradient(0deg, #fc624a 0%, #b93925 100%); }
+
+.english-lavanda {
+  background: linear-gradient(0deg, #8f8cab 0%, #6b6793 100%); }
+
 /* Buy IPad Air */
 .ipad-buy .container {
   padding-top: 100px;
@@ -415,20 +421,105 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   color: white; }
-  .ipad-buy .buy-content h2 {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px; }
+  .ipad-buy .buy-content .cart {
+    width: 340px;
+    margin-left: 50px; }
+  .ipad-buy .buy-content .buy-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .ipad-buy .buy-content .buy-title h2 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 26px; }
+    .ipad-buy .buy-content .buy-title h3:last-child {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      margin-left: 50px; }
+  .ipad-buy .buy-content .ipad-buy-content {
+    display: flex;
+    flex-direction: column; }
+    .ipad-buy .buy-content .ipad-buy-content .color h2 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      opacity: 0.7; }
   .ipad-buy .buy-content .cart-content {
     display: flex;
     flex-direction: column; }
     .ipad-buy .buy-content .cart-content .cart-item {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      background: rgba(255, 255, 255, 0.09);
+      backdrop-filter: blur(75.2696px);
+      border-radius: 20px;
+      padding: 15px;
+      border: 3px solid rgba(255, 255, 255, 0.2);
+      position: relative;
+      margin-bottom: 15px; }
       .ipad-buy .buy-content .cart-content .cart-item h2 {
+        font-family: "Montserrat";
+        font-style: normal;
         font-weight: 300;
-        font-size: 24px; }
+        font-size: 20px;
+        margin: 0; }
+      .ipad-buy .buy-content .cart-content .cart-item .item-color {
+        display: flex;
+        align-items: center;
+        margin-top: 10px; }
+        .ipad-buy .buy-content .cart-content .cart-item .item-color p {
+          font-size: 16px;
+          margin-top: 3px; }
+        .ipad-buy .buy-content .cart-content .cart-item .item-color div {
+          margin-left: 10px;
+          height: 18px;
+          width: 18px;
+          border-radius: 9px;
+          outline: 2px solid rgba(255, 255, 255, 0.3); }
+      .ipad-buy .buy-content .cart-content .cart-item p {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        opacity: 0.6;
+        margin-top: 25px;
+        margin-left: 2px;
+        margin-bottom: 0; }
+      .ipad-buy .buy-content .cart-content .cart-item .close-button {
+        border: none;
+        background-color: transparent;
+        display: block;
+        position: absolute;
+        top: 13px;
+        right: 15px;
+        width: 22px;
+        height: 24px;
+        cursor: pointer;
+        padding: 0; }
+      .ipad-buy .buy-content .cart-content .cart-item .close-button:after {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        content: "";
+        display: block;
+        background-color: white;
+        width: 1px;
+        height: 25px;
+        transform: rotate(45deg); }
+      .ipad-buy .buy-content .cart-content .cart-item .close-button:before {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        content: "";
+        display: block;
+        background-color: white;
+        width: 1px;
+        height: 25px;
+        transform: rotate(-45deg); }
 
 /* Preloader */
 .preloader {
