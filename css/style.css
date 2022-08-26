@@ -365,27 +365,6 @@ header {
       .accessories .accessories-item form input:checked + label {
         padding: 16px;
         border-radius: 18px; }
-    .accessories .accessories-item .count {
-      display: flex;
-      align-items: center;
-      min-width: 210px; }
-      .accessories .accessories-item .count h3 {
-        margin: 0;
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 300;
-        font-size: 22px; }
-      .accessories .accessories-item .count button {
-        color: black;
-        margin-left: 15px;
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 400;
-        background-color: white;
-        border: none;
-        border-radius: 20px;
-        padding: 8px 16px;
-        cursor: pointer; }
   @media (max-width: 608px) {
     .accessories form {
       flex-direction: column; }
@@ -393,6 +372,28 @@ header {
       margin-top: 15px; } }
   .accessories .accessories-item:last-child .image-box {
     max-width: 600px; }
+
+.count {
+  display: flex;
+  align-items: center;
+  min-width: 210px; }
+  .count h3 {
+    margin: 0;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px; }
+  .count button {
+    color: black;
+    margin-left: 15px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer; }
 
 .black {
   background: linear-gradient(0deg, black 0%, #353541 100%); }
@@ -412,10 +413,26 @@ header {
 .english-lavanda {
   background: linear-gradient(0deg, #8f8cab 0%, #6b6793 100%); }
 
+.space-gray {
+  background: linear-gradient(0deg, #747377 0%, #555558 100%); }
+
+.pink {
+  background: linear-gradient(0deg, #e7d2cf 0%, #e0b7b1 100%); }
+
+.purple {
+  background: linear-gradient(0deg, #bfbdd3 0%, #8c88b1 100%); }
+
+.blue {
+  background: linear-gradient(0deg, #90b4c4 0%, #5f8da2 100%); }
+
+.starlight {
+  background: linear-gradient(0deg, #faf7f2 0%, #cab591 100%); }
+
 /* Buy IPad Air */
 .ipad-buy .container {
   padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  max-width: 1400px; }
 .ipad-buy .buy-content {
   display: flex;
   flex-wrap: wrap;
@@ -440,14 +457,68 @@ header {
       font-size: 22px;
       margin-left: 50px; }
   .ipad-buy .buy-content .ipad-buy-content {
-    display: flex;
-    flex-direction: column; }
-    .ipad-buy .buy-content .ipad-buy-content .color h2 {
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 300;
-      font-size: 18px;
-      opacity: 0.7; }
+    display: flex; }
+    .ipad-buy .buy-content .ipad-buy-content .image-box {
+      position: relative;
+      max-width: 350px;
+      height: fit-content; }
+      .ipad-buy .buy-content .ipad-buy-content .image-box img {
+        width: 100%; }
+    .ipad-buy .buy-content .ipad-buy-content .settings {
+      margin-left: 30px;
+      display: flex;
+      flex-direction: column; }
+    .ipad-buy .buy-content .ipad-buy-content .set-item {
+      margin-bottom: 20px; }
+      .ipad-buy .buy-content .ipad-buy-content .set-item h2 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        opacity: 0.7;
+        margin-top: 0;
+        margin-left: 10px;
+        margin-bottom: 10px; }
+    .ipad-buy .buy-content .ipad-buy-content ul {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 400px; }
+      .ipad-buy .buy-content .ipad-buy-content ul li {
+        margin: 5px; }
+        .ipad-buy .buy-content .ipad-buy-content ul li button {
+          padding: 10px 15px;
+          background: rgba(255, 255, 255, 0.09);
+          backdrop-filter: blur(75.2696px);
+          border-radius: 20px;
+          border: 3px solid rgba(255, 255, 255, 0.2);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: white;
+          cursor: pointer;
+          min-width: 100px; }
+      .ipad-buy .buy-content .ipad-buy-content ul .color-item {
+        height: 24px;
+        width: 24px;
+        border-radius: 12px;
+        outline: 3px solid rgba(255, 255, 255, 0.2);
+        transform: translateZ(0);
+        margin-bottom: 10px; }
+      .ipad-buy .buy-content .ipad-buy-content ul p {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        opacity: 0.8;
+        margin: 0; }
+      .ipad-buy .buy-content .ipad-buy-content ul .storage-count {
+        margin: 0;
+        font-weight: 300;
+        opacity: 0.8; }
+    .ipad-buy .buy-content .ipad-buy-content .count {
+      margin-left: 5px; }
+      .ipad-buy .buy-content .ipad-buy-content .count button {
+        background-color: rgba(255, 255, 255, 0.88); }
   .ipad-buy .buy-content .cart-content {
     display: flex;
     flex-direction: column; }
