@@ -546,33 +546,6 @@ header {
 				border-radius: 18px;
 			}
 		}
-
-		.count {
-			display: flex;
-			align-items: center;
-			min-width: 210px;
-
-			h3 {
-				margin: 0;
-				font-family: "Montserrat";
-				font-style: normal;
-				font-weight: 300;
-				font-size: 22px;
-			}
-
-			button {
-				color: black;
-				margin-left: 15px;
-				font-family: "Montserrat";
-				font-style: normal;
-				font-weight: 400;
-				background-color: white;
-				border: none;
-				border-radius: 20px;
-				padding: 8px 16px;
-				cursor: pointer;
-			}
-		}
 	}
 
 	@media (max-width: 608px) {
@@ -589,6 +562,33 @@ header {
 		.image-box {
 			max-width: 600px;
 		}
+	}
+}
+
+.count {
+	display: flex;
+	align-items: center;
+	min-width: 210px;
+
+	h3 {
+		margin: 0;
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 300;
+		font-size: 22px;
+	}
+
+	button {
+		color: black;
+		margin-left: 15px;
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 400;
+		background-color: white;
+		border: none;
+		border-radius: 20px;
+		padding: 8px 16px;
+		cursor: pointer;
 	}
 }
 
@@ -610,6 +610,21 @@ header {
 .english-lavanda {
 	background: linear-gradient(0deg, rgba(143, 140, 171, 1) 0%, rgba(107, 103, 147, 1) 100%);
 }
+.space-gray {
+	background: linear-gradient(0deg, rgba(116, 115, 119, 1) 0%, rgba(85, 85, 88, 1) 100%);
+}
+.pink {
+	background: linear-gradient(0deg, rgba(231, 210, 207, 1) 0%, rgba(224, 183, 177, 1) 100%);
+}
+.purple {
+	background: linear-gradient(0deg, rgba(191, 189, 211, 1) 0%, rgba(140, 136, 177, 1) 100%);
+}
+.blue {
+	background: linear-gradient(0deg, rgba(144, 180, 196, 1) 0%, rgba(95, 141, 162, 1) 100%);
+}
+.starlight {
+	background: linear-gradient(0deg, rgba(250, 247, 242, 1) 0%, rgba(202, 181, 145, 1) 100%);
+}
 
 /* Buy IPad Air */
 
@@ -617,6 +632,7 @@ header {
 	.container {
 		padding-top: 100px;
 		padding-bottom: 100px;
+		max-width: 1400px;
 	}
 
 	.buy-content {
@@ -653,15 +669,91 @@ header {
 
 		.ipad-buy-content {
 			display: flex;
-			flex-direction: column;
 
-			.color {
+			.image-box {
+				position: relative;
+				max-width: 350px;
+				height: fit-content;
+
+				img {
+					width: 100%;
+				}
+			}
+
+			.settings {
+				margin-left: 30px;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.set-item {
+				margin-bottom: 20px;
+
 				h2 {
 					font-family: "Montserrat";
 					font-style: normal;
-					font-weight: 300;
-					font-size: 18px;
+					font-weight: 400;
+					font-size: 22px;
 					opacity: 0.7;
+					margin-top: 0;
+					margin-left: 10px;
+					margin-bottom: 10px;
+				}
+			}
+
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				max-width: 400px;
+
+				li {
+					margin: 5px;
+
+					button {
+						padding: 10px 15px;
+						background: rgba(255, 255, 255, 0.09);
+						backdrop-filter: blur(75.2696px);
+						border-radius: 20px;
+						border: 3px solid rgba(255, 255, 255, 0.2);
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						color: white;
+						cursor: pointer;
+						min-width: 100px;
+					}
+				}
+
+				.color-item {
+					height: 24px;
+					width: 24px;
+					border-radius: 12px;
+					outline: 3px solid rgba(255, 255, 255, 0.2);
+					transform: translateZ(0);
+					margin-bottom: 10px;
+				}
+
+				p {
+					font-family: "Montserrat";
+					font-style: normal;
+					font-weight: 400;
+					font-size: 14px;
+					opacity: 0.8;
+					margin: 0;
+				}
+
+				.storage-count {
+					margin: 0;
+					font-weight: 300;
+					opacity: 0.8;
+				}
+			}
+
+			.count {
+				margin-left: 5px;
+
+				button {
+					background-color: rgba(255, 255, 255, 0.88);
 				}
 			}
 		}
