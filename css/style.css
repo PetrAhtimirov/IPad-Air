@@ -438,38 +438,59 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   color: white; }
+  .ipad-buy .buy-content .ipad {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(75.2696px);
+    border-radius: 40px;
+    padding: 25px 30px 15px 30px;
+    flex: 1 0 25%; }
   .ipad-buy .buy-content .cart {
     width: 340px;
     margin-left: 50px; }
   .ipad-buy .buy-content .buy-title {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 15px; }
     .ipad-buy .buy-content .buy-title h2 {
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 400;
-      font-size: 26px; }
+      font-size: 26px;
+      margin: 0; }
     .ipad-buy .buy-content .buy-title h3:last-child {
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 400;
       font-size: 22px;
-      margin-left: 50px; }
+      margin-left: 50px;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 0; }
   .ipad-buy .buy-content .ipad-buy-content {
-    display: flex; }
+    display: flex;
+    position: relative; }
     .ipad-buy .buy-content .ipad-buy-content .image-box {
       position: relative;
-      max-width: 350px;
-      height: fit-content; }
+      flex-grow: 1;
+      flex-shrink: 2;
+      height: fit-content;
+      max-width: 450px;
+      min-width: 370px;
+      margin-top: auto;
+      margin-bottom: auto; }
       .ipad-buy .buy-content .ipad-buy-content .image-box img {
         width: 100%; }
     .ipad-buy .buy-content .ipad-buy-content .settings {
+      margin-top: 10px;
       margin-left: 30px;
       display: flex;
-      flex-direction: column; }
+      flex-grow: 2;
+      flex-shrink: 1;
+      flex-direction: column;
+      width: 60%; }
     .ipad-buy .buy-content .ipad-buy-content .set-item {
-      margin-bottom: 20px; }
+      margin-bottom: 15px; }
       .ipad-buy .buy-content .ipad-buy-content .set-item h2 {
         font-family: "Montserrat";
         font-style: normal;
@@ -479,15 +500,17 @@ header {
         margin-top: 0;
         margin-left: 10px;
         margin-bottom: 10px; }
+    .ipad-buy .buy-content .ipad-buy-content .set-item:nth-child(2) {
+      margin-bottom: 30px; }
     .ipad-buy .buy-content .ipad-buy-content ul {
       display: flex;
       flex-wrap: wrap;
-      max-width: 400px; }
+      max-width: 345px; }
       .ipad-buy .buy-content .ipad-buy-content ul li {
         margin: 5px; }
         .ipad-buy .buy-content .ipad-buy-content ul li button {
           padding: 10px 15px;
-          background: rgba(255, 255, 255, 0.09);
+          background: #212121;
           backdrop-filter: blur(75.2696px);
           border-radius: 20px;
           border: 3px solid rgba(255, 255, 255, 0.2);
@@ -514,11 +537,17 @@ header {
       .ipad-buy .buy-content .ipad-buy-content ul .storage-count {
         margin: 0;
         font-weight: 300;
-        opacity: 0.8; }
+        opacity: 0.8;
+        font-size: 18px; }
     .ipad-buy .buy-content .ipad-buy-content .count {
-      margin-left: 5px; }
+      align-self: end;
+      margin-top: auto;
+      padding-bottom: 10px; }
       .ipad-buy .buy-content .ipad-buy-content .count button {
-        background-color: rgba(255, 255, 255, 0.88); }
+        background-color: rgba(255, 255, 255, 0.9); }
+      .ipad-buy .buy-content .ipad-buy-content .count h3 {
+        margin-top: 3px;
+        opacity: 0.9; }
   .ipad-buy .buy-content .cart-content {
     display: flex;
     flex-direction: column; }
@@ -592,6 +621,25 @@ header {
         height: 25px;
         transform: rotate(-45deg); }
 
+@media (max-width: 1326px) {
+  .buy-content {
+    flex-direction: column;
+    align-items: center; }
+
+  .cart {
+    margin-top: 30px; } }
+@media (max-width: 798px) {
+  .ipad-buy-content {
+    flex-direction: column; }
+    .ipad-buy-content .image-box {
+      display: none; }
+    .ipad-buy-content .settings {
+      margin-left: 0 !important;
+      width: 100% !important; }
+
+  .cart {
+    margin-left: 0 !important;
+    width: 330px !important; } }
 /* Preloader */
 .preloader {
   position: fixed;
