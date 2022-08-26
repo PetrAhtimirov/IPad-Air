@@ -641,6 +641,14 @@ header {
 		justify-content: space-between;
 		color: white;
 
+		.ipad {
+			background: rgba(255, 255, 255, 0.06);
+			backdrop-filter: blur(75.2696px);
+			border-radius: 40px;
+			padding: 25px 30px 15px 30px;
+			flex: 1 0 25%;
+		}
+
 		.cart {
 			width: 340px;
 			margin-left: 50px;
@@ -650,12 +658,14 @@ header {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			margin-bottom: 15px;
 
 			h2 {
 				font-family: "Montserrat";
 				font-style: normal;
 				font-weight: 400;
 				font-size: 26px;
+				margin: 0;
 			}
 
 			h3:last-child {
@@ -664,16 +674,25 @@ header {
 				font-weight: 400;
 				font-size: 22px;
 				margin-left: 50px;
+				margin-top: 0;
+				margin-bottom: 0;
+				margin-right: 0;
 			}
 		}
 
 		.ipad-buy-content {
 			display: flex;
+			position: relative;
 
 			.image-box {
 				position: relative;
-				max-width: 350px;
+				flex-grow: 1;
+				flex-shrink: 2;
 				height: fit-content;
+				max-width: 450px;
+				min-width: 370px;
+				margin-top: auto;
+				margin-bottom: auto;
 
 				img {
 					width: 100%;
@@ -681,13 +700,17 @@ header {
 			}
 
 			.settings {
+				margin-top: 10px;
 				margin-left: 30px;
 				display: flex;
+				flex-grow: 2;
+				flex-shrink: 1;
 				flex-direction: column;
+				width: 60%;
 			}
 
 			.set-item {
-				margin-bottom: 20px;
+				margin-bottom: 15px;
 
 				h2 {
 					font-family: "Montserrat";
@@ -701,17 +724,21 @@ header {
 				}
 			}
 
+			.set-item:nth-child(2) {
+				margin-bottom: 30px;
+			}
+
 			ul {
 				display: flex;
 				flex-wrap: wrap;
-				max-width: 400px;
+				max-width: 345px;
 
 				li {
 					margin: 5px;
 
 					button {
 						padding: 10px 15px;
-						background: rgba(255, 255, 255, 0.09);
+						background: #212121;
 						backdrop-filter: blur(75.2696px);
 						border-radius: 20px;
 						border: 3px solid rgba(255, 255, 255, 0.2);
@@ -746,14 +773,22 @@ header {
 					margin: 0;
 					font-weight: 300;
 					opacity: 0.8;
+					font-size: 18px;
 				}
 			}
 
 			.count {
-				margin-left: 5px;
+				align-self: end;
+				margin-top: auto;
+				padding-bottom: 10px;
 
 				button {
-					background-color: rgba(255, 255, 255, 0.88);
+					background-color: rgba(255, 255, 255, 0.9);
+				}
+
+				h3 {
+					margin-top: 3px;
+					opacity: 0.9;
 				}
 			}
 		}
@@ -848,6 +883,37 @@ header {
 				}
 			}
 		}
+	}
+}
+
+@media (max-width: 1326px) {
+	.buy-content {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.cart {
+		margin-top: 30px;
+	}
+}
+
+@media (max-width: 798px) {
+	.ipad-buy-content {
+		flex-direction: column;
+
+		.image-box {
+			display: none;
+		}
+
+		.settings {
+			margin-left: 0 !important;
+			width: 100% !important;
+		}
+	}
+
+	.cart {
+		margin-left: 0 !important;
+		width: 330px !important;
 	}
 }
 
