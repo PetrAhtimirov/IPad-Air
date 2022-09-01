@@ -858,12 +858,17 @@ header {
 					background-color: transparent;
 					display: block;
 					position: absolute;
-					top: 13px;
-					right: 15px;
+					top: 16px;
+					right: 17px;
 					width: 22px;
 					height: 24px;
 					cursor: pointer;
 					padding: 0;
+					transition: 0.12s;
+				}
+
+				.close-button:hover {
+					transform: scale(1.12);
 				}
 
 				.close-button:after {
@@ -872,9 +877,9 @@ header {
 					right: 10px;
 					content: "";
 					display: block;
-					background-color: white;
+					background-color: rgba(255, 255, 255, 0.5);
 					width: 1px;
-					height: 25px;
+					height: 20px;
 					transform: rotate(45deg);
 				}
 				.close-button:before {
@@ -883,9 +888,9 @@ header {
 					right: 10px;
 					content: "";
 					display: block;
-					background-color: white;
+					background-color: rgba(255, 255, 255, 0.5);
 					width: 1px;
-					height: 25px;
+					height: 20px;
 					transform: rotate(-45deg);
 				}
 			}
