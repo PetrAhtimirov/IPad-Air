@@ -599,21 +599,24 @@ header {
         background-color: transparent;
         display: block;
         position: absolute;
-        top: 13px;
-        right: 15px;
+        top: 16px;
+        right: 17px;
         width: 22px;
         height: 24px;
         cursor: pointer;
-        padding: 0; }
+        padding: 0;
+        transition: 0.12s; }
+      .ipad-buy .buy-content .cart-content .cart-item .close-button:hover {
+        transform: scale(1.12); }
       .ipad-buy .buy-content .cart-content .cart-item .close-button:after {
         position: absolute;
         top: 0;
         right: 10px;
         content: "";
         display: block;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.5);
         width: 1px;
-        height: 25px;
+        height: 20px;
         transform: rotate(45deg); }
       .ipad-buy .buy-content .cart-content .cart-item .close-button:before {
         position: absolute;
@@ -621,9 +624,9 @@ header {
         right: 10px;
         content: "";
         display: block;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.5);
         width: 1px;
-        height: 25px;
+        height: 20px;
         transform: rotate(-45deg); }
   .ipad-buy .buy-content .cart-item:last-child {
     margin-bottom: 0; }
