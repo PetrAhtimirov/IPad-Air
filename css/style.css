@@ -732,6 +732,33 @@ header nav .nav-link:hover {
 	display: flex;
 	flex-direction: column;
 }
+
+.plug {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-size: 14px;
+	font-weight: 300;
+	display: none;
+	text-align: center;
+}
+
+.plug-on {
+	display: block !important;
+	animation-name: opacity-06;
+	animation-fill-mode: both;
+	animation-duration: 0.8s;
+}
+
+@keyframes opacity-06 {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0.6;
+	}
+}
+
 .ipad-buy .buy-content .cart-content .cart-item {
 	display: flex;
 	flex-direction: column;
