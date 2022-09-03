@@ -37,11 +37,11 @@ for (let i = 0; i < accessoriesForms.length; i++) {
 
 		const accessoriesItemColor = accessoriesForms[i].querySelector('.radio-color:checked');
 		const accessoriesItemPrice = accessoriesForms[i].querySelector('.accessories-price');
-		const accessoriesItemName = accessoriesForms[i].querySelector('.accessories-submit');
+		const accessoriesItemButton = accessoriesForms[i].querySelector('.accessories-submit');
 	
 		const itemColorContent = accessoriesItemColor.value;
 		const itemPriceContent = accessoriesItemPrice.textContent;
-		const itemNameContent = accessoriesItemName.value;
+		const itemNameContent = accessoriesItemButton.value;
 		
 		let newCartItem = newCartItemTemplate.cloneNode(true);
 		let newCartItemName = newCartItem.querySelector('.cart-item-name');
@@ -49,8 +49,17 @@ for (let i = 0; i < accessoriesForms.length; i++) {
 		let newCartItemPrice = newCartItem.querySelector('.cart-item-price');
 
 		newCartItemName.textContent = itemNameContent;
-		newCartItemColor.textContent = itemColorContent;
 		newCartItemPrice.textContent = itemPriceContent;
+		newCartItemColor.textContent = itemColorContent;
+
+		if (itemNameContent == 'Apple Pencil') {
+			newCartItem.querySelector('.item-color').style.display = "none";
+		};
+
+		/* Button stylization */
+
+		accessoriesItemButton.setAttribute("disabled", true);
+
 		cartContainer.appendChild(newCartItem);
 	});
 }
