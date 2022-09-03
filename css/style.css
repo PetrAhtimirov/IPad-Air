@@ -650,9 +650,10 @@ header nav .nav-link:hover {
 	color: white;
 	cursor: pointer;
 	min-width: 100px;
+	transition: 0.3s;
 }
 .ipad-buy .buy-content .ipad-buy-content ul li button:hover {
-	background: #fff;
+	background-color: #292929;
 }
 .ipad-buy .buy-content .ipad-buy-content ul .color-item {
 	height: 24px;
@@ -702,7 +703,13 @@ header nav .nav-link:hover {
 	border: 3px solid rgba(255, 255, 255, 0.2);
 	position: relative;
 	margin-bottom: 15px;
+	transition: 0.4s;
 }
+
+.ipad-buy .buy-content .cart-content .cart-item:hover {
+	background-color: #292929;
+}
+
 .ipad-buy .buy-content .cart-content .cart-item h2 {
 	font-family: "Montserrat";
 	font-style: normal;
@@ -737,7 +744,7 @@ header nav .nav-link:hover {
 	margin-left: 2px;
 	margin-bottom: 0;
 }
-.ipad-buy .buy-content .cart-content .cart-item .cart-storage {
+.ipad-buy .buy-content .cart-content .cart-item .cart-item-storage {
 	border-left: 1.4px solid rgba(255, 255, 255, 0.6);
 	padding-left: 10px;
 	text-transform: uppercase;

@@ -153,10 +153,27 @@
 								<li>Ipad mini (6 - gen)</li>
 							</ul>
 						</div>
-						<form style="justify-content: flex-end">
+						<form style="justify-content: flex-end" class="accessories-form">
 							<div class="count">
-								<h3>$129.00</h3>
-								<button type="submit" disabled>Add to cart</button>
+								<div class="colors" style="display: none">
+									<input
+										class="radio-color"
+										type="radio"
+										id="apple-pencil"
+										name="color"
+										value="White"
+										checked
+									/>
+									<label for="apple-pencil" class="white">white</label>
+								</div>
+								<h3 class="accessories-price">$129.00</h3>
+								<button
+									class="accessories-submit"
+									type="submit"
+									value="Apple Pencil"
+								>
+									Add to cart
+								</button>
 							</div>
 						</form>
 					</div>
@@ -165,38 +182,48 @@
 						<div class="image-box">
 							<img src="image\magic-keyboard.webp" alt="magic-keyboard" />
 						</div>
-						<form>
+						<form class="accessories-form">
 							<div class="colors">
 								<input
+									class="radio-color"
 									type="radio"
 									id="magic-keyboard-1"
 									name="color"
-									value="black"
+									value="Black"
 									checked
 								/>
 								<label for="magic-keyboard-1" class="black">black</label>
 								<input
+									class="radio-color"
 									type="radio"
 									id="magic-keyboard-2"
 									name="color"
-									value="white"
+									value="White"
 								/>
 								<label for="magic-keyboard-2" class="white">white</label>
 							</div>
 							<div class="count">
-								<h3>$299.00</h3>
-								<button type="submit" disabled>Add to cart</button>
+								<h3 class="accessories-price">$299.00</h3>
+								<button
+									class="accessories-submit"
+									type="submit"
+									value="Magic Keyboard for IPad"
+								>
+									Add to cart
+								</button>
 							</div>
 						</form>
 					</div>
+
 					<div class="accessories-item">
 						<h2>Smart Folio Case</h2>
 						<div class="image-box">
 							<img src="image\cases.webp" alt="magic-keyboard" />
 						</div>
-						<form>
+						<form class="accessories-form">
 							<div class="colors">
 								<input
+									class="radio-color"
 									type="radio"
 									id="folio-case-1"
 									name="color"
@@ -207,6 +234,7 @@
 									>marine-blue</label
 								>
 								<input
+									class="radio-color"
 									type="radio"
 									id="folio-case-2"
 									name="color"
@@ -216,6 +244,7 @@
 									>dark-cherry</label
 								>
 								<input
+									class="radio-color"
 									type="radio"
 									id="folio-case-3"
 									name="color"
@@ -225,6 +254,7 @@
 									>electric-orange</label
 								>
 								<input
+									class="radio-color"
 									type="radio"
 									id="folio-case-4"
 									name="color"
@@ -232,6 +262,7 @@
 								/>
 								<label for="folio-case-4" class="white">white</label>
 								<input
+									class="radio-color"
 									type="radio"
 									id="folio-case-5"
 									name="color"
@@ -242,8 +273,14 @@
 								>
 							</div>
 							<div class="count">
-								<h3>$79.00</h3>
-								<button type="submit" disabled>Add to cart</button>
+								<h3 class="accessories-price">$79.00</h3>
+								<button
+									class="accessories-submit"
+									type="submit"
+									value="Smart Folio Case"
+								>
+									Add to cart
+								</button>
 							</div>
 						</form>
 					</div>
@@ -363,6 +400,18 @@
 								</div>
 								<p>$599.00</p>
 							</div>
+
+							<template id="cart-item-template">
+								<div class="cart-item">
+									<button class="close-button"></button>
+									<h2 class="cart-item-name"></h2>
+									<div class="item-color">
+										<p class="cart-item-color"></p>
+										<p class="cart-item-storage"></p>
+									</div>
+									<p class="cart-item-price"></p>
+								</div>
+							</template>
 						</div>
 					</div>
 				</div>
