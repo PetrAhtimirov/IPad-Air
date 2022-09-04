@@ -497,7 +497,7 @@ header nav .nav-link:hover {
 	border-radius: 20px;
 	padding: 8px 16px;
 	cursor: pointer;
-	transition: 0.5s;
+	transition: 0.3s;
 	position: relative;
 }
 
@@ -506,7 +506,7 @@ header nav .nav-link:hover {
 }
 
 .accessories-submit:disabled {
-	color: white;
+	color: transparent;
 	position: relative;
 }
 
@@ -514,7 +514,7 @@ header nav .nav-link:hover {
 	display: block;
 	animation-name: check-mark;
 	animation-fill-mode: both;
-	animation-duration: 0.8s;
+	animation-duration: 0.3s;
 }
 
 .check-mark-icon {
@@ -524,7 +524,7 @@ header nav .nav-link:hover {
 	top: 5px;
 	right: 47px;
 	opacity: 0;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 
 @keyframes check-mark {
@@ -669,15 +669,20 @@ header nav .nav-link:hover {
 .ipad-buy .buy-content .ipad-buy-content .set-item:nth-child(2) {
 	margin-bottom: 30px;
 }
-.ipad-buy .buy-content .ipad-buy-content ul {
+.ipad-settings-container {
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 345px;
 }
-.ipad-buy .buy-content .ipad-buy-content ul li {
-	margin: 5px;
+.ipad-radio {
+	display: none;
 }
-.ipad-buy .buy-content .ipad-buy-content ul li button {
+
+.ipad-radio:checked + .ipad-radio-label {
+	background-color: rgba(255, 255, 255, 0.12);
+}
+
+.ipad-radio-label {
 	padding: 10px 15px;
 	background: #212121;
 	backdrop-filter: blur(75.2696px);
@@ -690,11 +695,18 @@ header nav .nav-link:hover {
 	cursor: pointer;
 	min-width: 100px;
 	transition: 0.3s;
+	margin: 5px;
 }
-.ipad-buy .buy-content .ipad-buy-content ul li button:hover {
+
+.radio-storage {
+	min-width: auto;
+}
+
+.ipad-radio-label:hover {
 	background-color: #292929;
 }
-.ipad-buy .buy-content .ipad-buy-content ul .color-item {
+
+.ipad-settings-container .color-item {
 	height: 24px;
 	width: 24px;
 	border-radius: 12px;
@@ -702,7 +714,7 @@ header nav .nav-link:hover {
 	transform: translateZ(0);
 	margin-bottom: 10px;
 }
-.ipad-buy .buy-content .ipad-buy-content ul p {
+.ipad-settings-container p {
 	font-family: "Montserrat";
 	font-style: normal;
 	font-weight: 400;
@@ -710,11 +722,11 @@ header nav .nav-link:hover {
 	opacity: 0.8;
 	margin: 0;
 }
-.ipad-buy .buy-content .ipad-buy-content ul .storage-count {
-	margin: 0;
-	font-weight: 300;
+.ipad-settings-container .storage-count {
+	margin: 0 !important;
+	font-weight: 300 !important;
 	opacity: 0.8;
-	font-size: 18px;
+	font-size: 18px !important;
 }
 .ipad-buy .buy-content .ipad-buy-content .count {
 	align-self: end;
@@ -810,9 +822,14 @@ header nav .nav-link:hover {
 	margin-left: 2px;
 	margin-bottom: 0;
 }
+
+.cart-item-color {
+	margin-right: 8px;
+}
+
 .ipad-buy .buy-content .cart-content .cart-item .cart-item-storage {
 	border-left: 1.4px solid rgba(255, 255, 255, 0.6);
-	padding-left: 10px;
+	padding-left: 9px;
 	text-transform: uppercase;
 }
 .ipad-buy .buy-content .cart-content .cart-item .close-button {

@@ -153,7 +153,7 @@
 								<li>Ipad mini (6 - gen)</li>
 							</ul>
 						</div>
-						<form style="justify-content: flex-end" class="accessories-form">
+						<form style="justify-content: flex-end" class="product-form">
 							<div class="count">
 								<div class="colors" style="display: none">
 									<input
@@ -166,11 +166,12 @@
 									/>
 									<label for="apple-pencil" class="white">white</label>
 								</div>
-								<h3 class="accessories-price">$129.00</h3>
+								<h3 class="product-price">$129.00</h3>
 								<button
 									class="accessories-submit"
 									type="submit"
 									value="Apple Pencil"
+									id="Apple Pencil"
 								>
 									Add to cart
 									<img
@@ -187,7 +188,7 @@
 						<div class="image-box">
 							<img src="image\magic-keyboard.webp" alt="magic-keyboard" />
 						</div>
-						<form class="accessories-form">
+						<form class="product-form">
 							<div class="colors">
 								<input
 									class="radio-color"
@@ -208,11 +209,12 @@
 								<label for="magic-keyboard-2" class="white">white</label>
 							</div>
 							<div class="count">
-								<h3 class="accessories-price">$299.00</h3>
+								<h3 class="product-price">$299.00</h3>
 								<button
 									class="accessories-submit"
 									type="submit"
 									value="Magic Keyboard for IPad"
+									id="Magic Keyboard for IPad"
 								>
 									Add to cart
 									<img
@@ -230,7 +232,7 @@
 						<div class="image-box">
 							<img src="image\cases.webp" alt="magic-keyboard" />
 						</div>
-						<form class="accessories-form">
+						<form class="product-form">
 							<div class="colors">
 								<input
 									class="radio-color"
@@ -283,11 +285,12 @@
 								>
 							</div>
 							<div class="count">
-								<h3 class="accessories-price">$79.00</h3>
+								<h3 class="product-price">$79.00</h3>
 								<button
 									class="accessories-submit"
 									type="submit"
 									value="Smart Folio Case"
+									id="Smart Folio Case"
 								>
 									Add to cart
 									<img
@@ -315,60 +318,63 @@
 							<div class="image-box">
 								<img src="image\buy-block\red.webp" alt="" />
 							</div>
-							<div class="settings">
+							<form class="product-form settings">
 								<div class="set-item">
 									<h2>Color</h2>
-									<ul>
-										<li>
-											<button>
-												<div class="color-item space-gray"></div>
-												<p>Space Gray</p>
-											</button>
-										</li>
-										<li>
-											<button>
-												<div class="color-item pink"></div>
-												<p>Pink</p>
-											</button>
-										</li>
-										<li>
-											<button>
-												<div class="color-item purple"></div>
-												<p>Purple</p>
-											</button>
-										</li>
-										<li>
-											<button>
-												<div class="color-item blue"></div>
-												<p>Blue</p>
-											</button>
-										</li>
-										<li>
-											<button>
+									<div class="ipad-settings-container">
+										<input class="ipad-radio radio-color" type="radio" name="ipad-color" id="ipad-color-item-1" value="Space Gray" checked></input>
+										<label class="ipad-radio-label" for="ipad-color-item-1">
+											<div class="color-item space-gray"></div>
+											<p>Space Gray</p>
+										</label>
+
+										<input class="ipad-radio radio-color" type="radio" name="ipad-color" id="ipad-color-item-2" value="Pink"></input>
+										<label class="ipad-radio-label" for="ipad-color-item-2">
+											<div class="color-item pink"></div>
+											<p>Pink</p>
+										</label>
+										
+										<input class="ipad-radio radio-color" type="radio" name="ipad-color" id="ipad-color-item-3" value="Purple"></input>
+										<label class="ipad-radio-label" for="ipad-color-item-3">
+											<div class="color-item purple"></div>
+											<p>Purple</p>
+										</label>
+										
+										<input class="ipad-radio radio-color" type="radio" name="ipad-color" id="ipad-color-item-4" value="Blue"></input>
+										<label class="ipad-radio-label" for="ipad-color-item-4">
+											<div class="color-item blue"></div>
+											<p>Blue</p>
+										</label>
+										
+										<input class="ipad-radio radio-color" type="radio" name="ipad-color" id="ipad-color-item-5" value="Starlight"></input>
+										<label class="ipad-radio-label" for="ipad-color-item-5">
 												<div class="color-item starlight"></div>
 												<p>Starlight</p>
-											</button>
-										</li>
-									</ul>
+										</label>
+									</div>
 								</div>
 								<div class="set-item">
 									<h2>Storage</h2>
-									<ul>
-										<li>
-											<button>
-												<h2 class="storage-count">64GB</h2>
-											</button>
-										</li>
-										<li>
-											<button>
-												<h2 class="storage-count">256GB</h2>
-											</button>
-										</li>
-									</ul>
+									<div class="ipad-settings-container">
+										<input class="ipad-radio radio-storage" type="radio" name="ipad-storage" id="ipad-storage-item-1" value="64GB" checked></input>
+										<label class="ipad-radio-label radio-storage" for="ipad-storage-item-1">
+											<h2 class="storage-count">64GB</h2>
+										</label>
+
+										<input class="ipad-radio radio-storage" type="radio" name="ipad-storage" id="ipad-storage-item-2" value="256GB"></input>
+										<label class="ipad-radio-label radio-storage" for="ipad-storage-item-2">
+											<h2 class="storage-count">256GB</h2>
+										</label>
+									</div>
 								</div>
 								<div class="count">
-									<h3>$599.00</h3>
-									<button class="accessories-submit" type="submit">
+									<h3 class="product-price">$599.00</h3>
+									<button
+										class="accessories-submit"
+										type="submit"
+										value="IPad Air"
+										id="IPad Air"
+									>
 										Add to Cart
 										<img
 											src="image\icons\check-mark.svg"
@@ -377,13 +383,14 @@
 										/>
 									</button>
 								</div>
-							</div>
+							</form>
 						</div>
 					</div>
+
 					<div class="cart">
 						<div class="buy-title">
 							<h2>Cart</h2>
-							<h3>1580.00$</h3>
+							<h3 class="cart-summ">$0.00</h3>
 						</div>
 						<p class="plug">You have no items in your shopping cart yet.</p>
 						<div class="cart-content">

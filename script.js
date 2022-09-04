@@ -26,12 +26,15 @@ for (let smoothLink of smoothLinks) {
 const cartContainer = document.querySelector('.cart-content');
 const cartItems = cartContainer.children;
 
-const accessoriesForms = document.querySelectorAll('.accessories-form');
+const productForms = document.querySelectorAll('.product-form');
 
 const cartItemTemplate = document.querySelector('#cart-item-template').content;
 const newCartItemTemplate = cartItemTemplate.querySelector('.cart-item');
 
 const cartPlug = document.querySelector('.plug');
+
+const cartSumm = document.querySelector('.cart-summ');
+let cartSummContent = 0;
 
 /* Delete CartItem */
 
@@ -39,22 +42,32 @@ if (cartContainer.children.length <= 1) {
 	cartPlug.classList.add('plug-on');
 }
 
-for (let i = 0; i < accessoriesForms.length; i++) {
-	accessoriesForms[i].addEventListener('submit', function (evt) {
+for (let i = 0; i < productForms.length; i++) {
+	productForms[i].addEventListener('submit', function (evt) {
 		evt.preventDefault();
 
-		const accessoriesItemColor = accessoriesForms[i].querySelector('.radio-color:checked');
-		const accessoriesItemPrice = accessoriesForms[i].querySelector('.accessories-price');
-		const accessoriesItemButton = accessoriesForms[i].querySelector('.accessories-submit');
+		const productItemColor = productForms[i].querySelector('.radio-color:checked');
+		const productItemStorage = productForms[i].querySelector('.radio-storage:checked');
+		const productItemPrice = productForms[i].querySelector('.product-price');
+		const productItemButton = productForms[i].querySelector('.accessories-submit');
 	
-		const itemColorContent = accessoriesItemColor.value;
-		const itemPriceContent = accessoriesItemPrice.textContent;
-		const itemNameContent = accessoriesItemButton.value;
+		const itemColorContent = productItemColor.value;
+		let itemStorageContent = '';
+		const itemPriceContent = productItemPrice.textContent;
+		const itemNameContent = productItemButton.value;
+
+		console.log(productItemStorage);
 		
 		let newCartItem = newCartItemTemplate.cloneNode(true);
 		let newCartItemName = newCartItem.querySelector('.cart-item-name');
 		let newCartItemColor = newCartItem.querySelector('.cart-item-color');
+		let newCartItemStorage = newCartItem.querySelector('.cart-item-storage');
 		let newCartItemPrice = newCartItem.querySelector('.cart-item-price');
+
+		if (productItemStorage != null) {
+			itemStorageContent = productItemStorage.value;
+			newCartItemStorage.textContent = itemStorageContent
+		}
 
 		newCartItemName.textContent = itemNameContent;
 		newCartItemPrice.textContent = itemPriceContent;
@@ -65,33 +78,42 @@ for (let i = 0; i < accessoriesForms.length; i++) {
 		};
 
 		cartContainer.appendChild(newCartItem);
+		deleteCartItem(newCartItem);
 
-		/* Delete CartItem */
+		cartSummContent += parseFloat(itemPriceContent.slice(1));
+		cartSumm.textContent = '$' + cartSummContent + '.00';
 
-		let deleteCartItem = function(cartItem) {
-			if (cartItem.tagName != 'TEMPLATE') {
-			let closeButton = cartItem.querySelector('.close-button');
-			closeButton.addEventListener('click', function () {
-				cartItem.remove();
-				accessoriesItemButton.setAttribute("disabled", false);
-		
-				if (cartContainer.children.length <= 1) {
-					cartPlug.classList.add('plug-on');
-				}
-			});
-			}
-		};
 
-		/*Stylization */
-
-		accessoriesItemButton.setAttribute("disabled", true);
+		/* Stylization */
 
 		if (cartContainer.children.length > 1) {
 			cartPlug.classList.remove('plug-on');
 		};
 
-		for (let i = 0; i < cartItems.length; i++) {
-			deleteCartItem(cartItems[i]);
-		};
+		productItemButton.setAttribute("disabled", "");
 	});
+};
+
+/* Delete CartItem */
+
+let deleteCartItem = function(cartItem) {
+	if (cartItem.tagName != 'TEMPLATE') {
+		let closeButton = cartItem.querySelector('.close-button');
+		closeButton.addEventListener('click', function () {
+
+			let currentPriceContent = cartItem.querySelector('.cart-item-price').textContent;
+			cartSummContent -= parseFloat(currentPriceContent.slice(1));
+			cartSumm.textContent = '$' + cartSummContent + '.00';
+
+			let currentNameContent = cartItem.querySelector('.cart-item-name').textContent;
+			let currentAccessoriesItemButton = document.getElementById(currentNameContent);
+			currentAccessoriesItemButton.removeAttribute("disabled");
+
+			cartItem.remove();
+	
+			if (cartContainer.children.length <= 1) {
+				cartPlug.classList.add('plug-on');
+			}
+		});
+	}
 };
