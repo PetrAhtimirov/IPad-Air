@@ -316,38 +316,38 @@
 						</div>
 						<div class="ipad-buy-content">
 							<div class="image-box">
-								<img src="image\buy-block\red.webp" alt="" />
+								<img class="ipad-pic" src="image\buy-block\space-gray.webp" alt="" />
 							</div>
 							<form class="product-form settings">
 								<div class="set-item">
 									<h2>Color</h2>
 									<div class="ipad-settings-container">
 										<input class="ipad-radio radio-color" type="radio" name="ipad-color" id="ipad-color-item-1" value="Space Gray" checked></input>
-										<label class="ipad-radio-label" for="ipad-color-item-1">
+										<label class="ipad-radio-label" for="ipad-color-item-1" onclick="setIpadPic('image/buy-block/space-gray.webp')">
 											<div class="color-item space-gray"></div>
 											<p>Space Gray</p>
 										</label>
 
 										<input class="ipad-radio radio-color" type="radio" name="ipad-color" id="ipad-color-item-2" value="Pink"></input>
-										<label class="ipad-radio-label" for="ipad-color-item-2">
+										<label class="ipad-radio-label" for="ipad-color-item-2" onclick="setIpadPic('image/buy-block/pink.webp')">
 											<div class="color-item pink"></div>
 											<p>Pink</p>
 										</label>
 										
 										<input class="ipad-radio radio-color" type="radio" name="ipad-color" id="ipad-color-item-3" value="Purple"></input>
-										<label class="ipad-radio-label" for="ipad-color-item-3">
+										<label class="ipad-radio-label" for="ipad-color-item-3" onclick="setIpadPic('image/buy-block/purple.webp')">
 											<div class="color-item purple"></div>
 											<p>Purple</p>
 										</label>
 										
 										<input class="ipad-radio radio-color" type="radio" name="ipad-color" id="ipad-color-item-4" value="Blue"></input>
-										<label class="ipad-radio-label" for="ipad-color-item-4">
+										<label class="ipad-radio-label" for="ipad-color-item-4" onclick="setIpadPic('image/buy-block/blue.webp')">
 											<div class="color-item blue"></div>
 											<p>Blue</p>
 										</label>
 										
 										<input class="ipad-radio radio-color" type="radio" name="ipad-color" id="ipad-color-item-5" value="Starlight"></input>
-										<label class="ipad-radio-label" for="ipad-color-item-5">
+										<label class="ipad-radio-label" for="ipad-color-item-5" onclick="setIpadPic('image/buy-block/starlight.webp')">
 												<div class="color-item starlight"></div>
 												<p>Starlight</p>
 										</label>
@@ -357,18 +357,18 @@
 									<h2>Storage</h2>
 									<div class="ipad-settings-container">
 										<input class="ipad-radio radio-storage" type="radio" name="ipad-storage" id="ipad-storage-item-1" value="64GB" checked></input>
-										<label class="ipad-radio-label radio-storage" for="ipad-storage-item-1">
+										<label class="ipad-radio-label radio-storage" onclick="setIpadPrice('$599.00')" for="ipad-storage-item-1">
 											<h2 class="storage-count">64GB</h2>
 										</label>
 
 										<input class="ipad-radio radio-storage" type="radio" name="ipad-storage" id="ipad-storage-item-2" value="256GB"></input>
-										<label class="ipad-radio-label radio-storage" for="ipad-storage-item-2">
+										<label class="ipad-radio-label radio-storage" onclick="setIpadPrice('$749.00')" for="ipad-storage-item-2">
 											<h2 class="storage-count">256GB</h2>
 										</label>
 									</div>
 								</div>
 								<div class="count">
-									<h3 class="product-price">$599.00</h3>
+									<h3 class="product-price ipad-price">$599.00</h3>
 									<button
 										class="accessories-submit"
 										type="submit"

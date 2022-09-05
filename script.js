@@ -117,3 +117,13 @@ let deleteCartItem = function(cartItem) {
 		});
 	}
 };
+
+let setIpadPrice = function (price) {
+	const currentIpadPrice = document.querySelector('.ipad-price');
+	currentIpadPrice.textContent = price;
+};
+
+let setIpadPic = function (picSrc) {	
+	const currentIpadPic = document.querySelector('.ipad-pic');
+	currentIpadPic.setAttribute('src', picSrc);
+};
