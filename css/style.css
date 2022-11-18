@@ -452,14 +452,31 @@ header nav .nav-link:hover {
 	margin: 5px;
 	box-sizing: unset;
 	position: relative;
-	outline: 3px solid rgba(255, 255, 255, 0.3);
 	transform: translateZ(0);
 	transition: 0.3s;
 	cursor: pointer;
 }
+
+.accessories .accessories-item form label::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: -2.5px;
+	left: -2.5px;
+	padding: 12.5px;
+	border: 3px solid rgba(255, 255, 255, 0.3);
+	border-radius: 16px;
+	transition: 0.3s;
+}
+
 .accessories .accessories-item form input:checked + label {
 	padding: 16px;
 	border-radius: 18px;
+}
+
+.accessories .accessories-item form input:checked + label::after {
+	padding: 15.5px;
+	border-radius: 20px;
 }
 
 @media (max-width: 608px) {

@@ -55,8 +55,6 @@ for (let i = 0; i < productForms.length; i++) {
 		let itemStorageContent = '';
 		const itemPriceContent = productItemPrice.textContent;
 		const itemNameContent = productItemButton.value;
-
-		console.log(productItemStorage);
 		
 		let newCartItem = newCartItemTemplate.cloneNode(true);
 		let newCartItemName = newCartItem.querySelector('.cart-item-name');
