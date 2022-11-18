@@ -458,6 +458,10 @@ header nav .nav-link:hover {
 	cursor: pointer;
 }
 
+.accessories .accessories-item form label:hover {
+	filter: brightness(1.12);
+}
+
 .accessories .accessories-item form label::after {
 	content: '';
 	display: block;
@@ -519,6 +523,10 @@ header nav .nav-link:hover {
 	cursor: pointer;
 	transition: 0.3s;
 	position: relative;
+}
+
+.accessories-submit:hover {
+	background-color: rgba(255, 255, 255, 0.8)
 }
 
 .accessories-submit > .check-mark-icon {
