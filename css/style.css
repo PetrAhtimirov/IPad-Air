@@ -141,8 +141,8 @@ header nav .nav-link:hover {
 	background-color: black;
 }
 .main-banner .background-video {
-	min-width: 100%;
-	min-height: 100%;
+	min-width: 100% !important;
+	min-height: 100% !important;
 }
 .main-banner .video-mask {
 	position: absolute;
@@ -738,7 +738,7 @@ header nav .nav-link:hover {
 	height: 32px;
 	width: 32px;
 	border-radius: 16px;
-	border: 3px solid #5e5e5e;
+	border: 3px solid #616161;
 	transform: translateZ(0);
 	margin-bottom: 10px;
 }
@@ -763,8 +763,13 @@ header nav .nav-link:hover {
 	padding-bottom: 10px;
 }
 .ipad-buy .buy-content .ipad-buy-content .count button {
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(255, 255, 255, 0.93);
 }
+
+.ipad-buy .buy-content .ipad-buy-content .count button:hover {
+	opacity: 0.85;
+}
+
 .ipad-buy .buy-content .ipad-buy-content .count h3 {
 	margin-top: 3px;
 	opacity: 0.9;
